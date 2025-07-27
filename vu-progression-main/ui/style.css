@@ -1,0 +1,74 @@
+body, html {
+    overflow: hidden;
+    background-color: transparent;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: none;
+    flex-direction: column;
+    width: 450px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.popup.show {
+    display: flex;
+    opacity: 1;
+}
+
+.header {
+    background-color: rgba(255, 136, 0, 0.8);
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#rank-image {
+    width: 96px;
+    height: 96px;
+    margin-right: 15px;
+}
+
+.text-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.promotion-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #FF8800; /* BF3 Orange */
+}
+
+.unlocked-text {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* Attachment Popup Specifics */
+.attachment {
+    width: 400px;
+    border-top: 3px solid #FF8800;
+}
+
+#attachment-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 15px;
+}
